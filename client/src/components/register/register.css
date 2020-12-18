@@ -1,0 +1,18 @@
+@import '~antd/dist/antd.css';
+
+.register-form {
+  max-width: 380px;
+    text-align: center;
+  margin:auto;
+  padding-top: 40px;
+    background-color: grey;
+}
+.register-form-forgot {
+  float: right;
+}
+.ant-col-rtl .register-form-forgot {
+  float: left;
+}
+.register-form-button {
+  width: 100%;
+}
