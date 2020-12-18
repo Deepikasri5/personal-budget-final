@@ -1,7 +1,10 @@
 let Budget = require('../models/Budget');
+const { v4: uuidv4 } = require('uuid');
 
 
 exports.create = (req, res,next) => {
+  req.body.id = uuidv4();
+  req.body.userId = req.user.id;
     Budget.create(req.body, (error, data) => {
         if (error) {
             return next(error)
@@ -14,7 +17,7 @@ exports.create = (req, res,next) => {
 
 
 exports.read = (req, res,next) => {
-  Budget.find((error, data) => {
+  Budget.find({userId: req.user.id},(error, data) => {
       if (error) {
           return next(error)
       } else {

@@ -50,7 +50,6 @@ export default class Expense extends Component {
                                 <td>Expense Name</td>
                                 <td>Expense Limit</td>
                                 <td>Budget Name</td>
-                                <td>Options</td>
                             </tr>
                         </thead>
                         <tbody>
