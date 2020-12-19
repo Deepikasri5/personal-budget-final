@@ -1,4 +1,4 @@
-let url = 'mongodb://localhost:27017/final_budget'
+let url = 'mongodb://localhost:27017/abc_budget'
 
 
 let express = require('express');
